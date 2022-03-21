@@ -52,9 +52,9 @@ router.get('/:id', async(req, res) => {
 
 router.post('/', async(req, res) => {
     try{
-        var {product_name, price, amount, detail} = req.body
+        var {products_name, price, amount, detail} = req.body
         var newProduct = new productModel({
-            product_name: product_name,
+            products_name: products_name,
             price: price,
             amount: amount,
             detail: detail,
@@ -83,14 +83,14 @@ router.put('/:id', async(req, res) => {
                 message: "Invalid ID",
             })
         }else{
-            var {product_name, price, amount, detail} = req.body
+            var {products_name, price, amount, detail} = req.body
             await productModel.updateOne(
                 {
                     _id:mongoose.Types.ObjectId(id)
                 },
                 {
                     $set: {
-                        product_name: product_name,
+                        products_name: products_name,
                         price: price,
                         amount: amount,
                         detail: detail
