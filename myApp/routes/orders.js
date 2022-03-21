@@ -21,10 +21,10 @@ router.get('/', async(req, res) => {
 
 router.post('/', async(req, res) => {
     try{
-        var {buyer, order, amount} = req.body
+        var {buyer, order_name, amount} = req.body
         var newOrder = new ordersModel({
             buyer: buyer,
-            order: order,
+            order_name: order_name,
             amount: amount
         })
 
@@ -34,6 +34,7 @@ router.post('/', async(req, res) => {
             message: 'success',
             data: order
         })
+
     }
     catch(err){
         console.log(err)
@@ -42,5 +43,19 @@ router.post('/', async(req, res) => {
         })
     }
 })
+
+// router.put('/:order_name',async (res, req) => {
+//     try{
+//         var order = req.params.order_name
+
+//         if (ordersModel.find(order_name:order_name))
+//     }
+//     catch(err){
+//         console.log(err)
+//         res.status(500).send({
+//             message: 'error'
+//         })
+//     }
+// })
 
 module.exports = router;
