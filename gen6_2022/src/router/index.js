@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import TestComp from '../views/TestCompView.vue'
 
 Vue.use(VueRouter)
 
@@ -25,8 +26,8 @@ const routes = [
   },
   {
     path: '/testComp',
-    name: 'testCom',
-    component: () => import('../views/TestCompView.vue')
+    name: 'testComp',
+    component: TestComp
   }
 ]
 

@@ -6,7 +6,7 @@
 import TestComp from '../components/TestComp'
 
 export default {
-  name: 'TestComp',
+  name: 'testComp',
 
   components: {
     TestComp
