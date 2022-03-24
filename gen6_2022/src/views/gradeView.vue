@@ -25,11 +25,11 @@
             </v-col>
           </v-row>
           <v-btn color="success" @click="calGrade(score)">grade</v-btn>
-          <v-row>
+          <!-- <v-row>
             <v-col cols="12">
-              <!-- <h1 v-if="show">{{score}}</h1> -->
+              <h1 v-if="show">{{score}}</h1>
             </v-col>
-          </v-row>
+          </v-row> -->
           <v-row>
             <v-col cols="12">
               <h1>{{grade}}</h1>
