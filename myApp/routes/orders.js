@@ -44,24 +44,24 @@ router.post('/', async(req, res) => {
     }
 })
 
-router.get('/:name', async(res, req) => {
-    try{
-        let name = req.params.name
+// router.get('/:name', async(res, req) => {
+//     try{
+//         let name = req.params.name
 
-        var order_name = await ordersModel.findOneAndUpdate()
-        // if(!mongoose.Types.ObjectId.isValid()){
-        //     res.status(400).send({
-        //         message: 'Invalid ID'
-        //     })
-        // }else{
-        //     var {buyer, order_name, amount} = req.body
-        //     var order = await ordersModel.findOneAndUpdate()
-        // }
-    }
-    catch{
+//         var order_name = await ordersModel.findOneAndUpdate()
+//         // if(!mongoose.Types.ObjectId.isValid()){
+//         //     res.status(400).send({
+//         //         message: 'Invalid ID'
+//         //     })
+//         // }else{
+//         //     var {buyer, order_name, amount} = req.body
+//         //     var order = await ordersModel.findOneAndUpdate()
+//         // }
+//     }
+//     catch{
 
-    }
-})
+//     }
+// })
 
 // router.put('/:order_name',async (res, req) => {
 //     try{
